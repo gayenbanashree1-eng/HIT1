@@ -4,9 +4,9 @@ import joblib
 import streamlit as st
 import os
 
-MODEL_PATH=os.path.join(os.path.dirname(_file_),"SVC.joblib")
+MODEL_PATH=os.path.join(os.path.dirname(__file__),"SVC.joblib")
 
-model=joblib.load("svc.joblib")
+model=joblib.load("SVC.joblib")
 
 st.set_page_config(
     page_title="CANCER DETECTION",
